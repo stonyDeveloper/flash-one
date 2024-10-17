@@ -83,7 +83,7 @@ const WaitList = () => {
         <div className="h-[calc(100vh-3.125rem)] w-[0.5px] bg-custom-gradient"></div>
       </div>
       <div className="absolute bottom-0 right-4  grid place-items-center h-screen z-10">
-        <div className="h-[calc(100vh-3.125rem)] w-[0.5px] bg-custom-gradient"></div>
+        <div className="h-[calc(100vh-3.125rem)] w-[0.5px] bg-custom-gradient"></div> 
       </div>
     </div>
   );
