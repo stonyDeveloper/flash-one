@@ -14,7 +14,7 @@ const JoinWaitlist = () => {
 
       <div className="px-8 mt-6">
         <input
-          className="waitlist-email-input w-full h-10 rounded-lg outline-none px-4 text-[14px] font-[400] text-[#CFECED] placeholder:text-[#CFECED] border border-[#13949A]"
+          className="waitlist-email-input w-full h-10 rounded-lg outline-none px-4 text-[14px] font-[400] text-[#CFECED] placeholder:text-[#CFECED] placeholder:text-[14px] border border-[#13949A]"
           placeholder="Your Email Address"
           type="text"
         />

@@ -230,3 +230,11 @@ body {
     rgba(6, 106, 111, 0.1) 91%
   );
 }
+
+
+
+@media screen and (max-width: 767px) {
+  input, select, textarea {
+       font-size: 16px !important;
+  }
+}
