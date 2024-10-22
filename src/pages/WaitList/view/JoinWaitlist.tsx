@@ -25,7 +25,7 @@ const JoinWaitlist = () => {
           variants={variants1}
           className="text-[48px] lg:text-[64px] font-cabinet font-extrabold bg-text-gradient bg-clip-text text-transparent text-center z-50 mt-10"
         >
-          Bernice's Health
+          FlashOne Health
         </motion.div>
 
         <p className="text-center mx-auto mt-2 px-8 tracking-tighter leading-[20px] bg-text-gradient bg-clip-text text-transparent font-[400] lg:hidden">

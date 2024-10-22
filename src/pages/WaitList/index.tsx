@@ -6,7 +6,7 @@ import SocialMediaIcons from "./view/SocialMediaIcons";
 // dont forget to remove h-screen x
 const WaitList = () => {
   return (
-    <div className="waitlist relative min-h-screen"> 
+    <div className="waitlist relative h-fit"> 
       <div className="grid place-items-center pt-10 lg:hidden">
         <Logo fadeIn />
       </div>
@@ -24,7 +24,7 @@ const WaitList = () => {
 
       <SocialMediaIcons />
 
-      <div className="footer text-[12px] lg:text-[14px] font-[400] lg:font-[500] text-[#13949A] py-2 lg:py-4 lg:pt-5 text-center border-t your-element bg-[#0E292B] -mt-[10px] lg:mt-[-15px] z-50">
+      <div className="footer text-[12px] lg:text-[14px] font-[400] lg:font-[500] text-[#13949A] py-2 lg:py-4 lg:pt-5 text-center border-t your-element bg-[#0E292B]  z-50 absolute  bottom-0 w-full">
         © 2024, FlashOne Health. All Rights Reserved
       </div>
     </div>
