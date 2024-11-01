@@ -12,9 +12,9 @@ const SocialMediaIcons = () => {
   return (
     <div className="relative">
       {/* Mobile View */}
-      <img className="animated-planet w-full -z-50 lg:hidden" src={Planet} alt="Planet" />
+      <img className="  animated-planet w-full -z-50 lg:hidden" src={Planet} alt="Planet" />
       <img
-        className="w-full animated-planet hidden lg:block"
+        className="w-full -mt-4 animated-planet hidden lg:block -z-50"
         src={InitialDesktopPlanet}
         alt="Initial planet"
       />
@@ -23,7 +23,7 @@ const SocialMediaIcons = () => {
         {/* Initial Planet with animation */}
 
         {/* Social Media Icons */}
-        <div className="absolute top-24 lg:top-60   inset-0 flex justify-center items-center ">
+        <div className="absolute top-24     inset-0 flex justify-center items-center ">
           <div className="flex gap-8">
             {media_icons.map((image, index) => (
               <img

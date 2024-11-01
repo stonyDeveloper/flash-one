@@ -148,6 +148,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 
 .waitlist-email-input {
@@ -255,6 +256,7 @@ body {
 
 .animated-planet {
   animation: sharpUpAndDown 4s linear infinite;
+  z-index: -1;
 }
 
 
@@ -263,6 +265,16 @@ body {
   input, select, textarea {
        font-size: 16px !important;
   }
+
+  @keyframes sharpUpAndDown {
+    0%, 100% {
+      transform: translateY(0); /* Original position */
+    }
+    50% {
+      transform: translateY(-4px); /* Move up */
+    }
+  }
+  
 }
 
 

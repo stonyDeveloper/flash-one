@@ -17,7 +17,7 @@ const WaitListHeader = () => {
   };
 
   return (
-    <div className="flex items-center lg:justify-center gap-6 mt-[99px] lg:mt-[34px]">
+    <div className="flex items-center lg:justify-center gap-6 mt-[99px] lg:mt-[18px]">
       {/* Left Line Animation */}
       <motion.div
         initial="hidden"
@@ -33,19 +33,19 @@ const WaitListHeader = () => {
         animate="visible"
         variants={FADE_IN_VARIANT}
         transition={{ duration: 1, delay: 0.5 }} // Add delay so text appears after lines start animating
-        className="text-[16px] lg:text-[20] font-400 bg-text-gradient bg-clip-text text-transparent"
+        className="text-[16px] lg:text-[20px] font-400 bg-text-gradient bg-clip-text text-transparent"
       >
         Waitlist
       </motion.p>
 
-      {/* Right Line Animation */}
+      {/* Right Line Animation with Flip */}
       <motion.div
         initial="hidden"
         animate="visible"
         variants={RIGHT_SLIDE_VARIANT}
         transition={{ duration: 1 }}
         className="w-[100%] lg:w-[10%] h-[0.5px] waitlist-line-right"
-        style={{ transform: "scaleX(-1)" }} // Flip the right div horizontally using inline styles
+        style={{ transform: "scaleX(-1)" }} // Apply flip here using inline style
       ></motion.div>
     </div>
   );

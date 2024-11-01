@@ -23,12 +23,12 @@ const JoinWaitlist = () => {
           animate="visible"
           transition={{ duration: 1 }}
           variants={variants1}
-          className="text-[48px] lg:text-[64px] font-cabinet font-extrabold bg-text-gradient bg-clip-text text-transparent text-center z-50 mt-10"
+          className="text-[48px] lg:text-[64px] font-cabinet font-extrabold bg-text-gradient bg-clip-text text-transparent text-center z-50 mt-10 lg:mt-4"
         >
           FlashOne Health
         </motion.div>
 
-        <p className="text-center mx-auto mt-2 px-8 tracking-tighter leading-[20px] bg-text-gradient bg-clip-text text-transparent font-[400] lg:hidden">
+        <p className="text-center mx-auto mt-2 px-8 tracking-tighter lg:tracking-wider leading-[20px] bg-text-gradient bg-clip-text text-transparent font-[400] lg:hidden">
           Join our waitlist for exclusive access to top-tier health insurance
           plans for your family in Nigeria.
         </p>
@@ -39,9 +39,9 @@ const JoinWaitlist = () => {
           plans for your family in Nigeria.
         </p>
 
-        <div className="px-8 lg:px-16 mt-6 max-w-[600px] m-auto lg:flex lg:gap-6 items-center">
+        <div className="px-8 lg:px-4 mt-6 max-w-[2500px] m-auto lg:flex lg:gap-8 items-center ">
           <input
-            className="waitlist-email-input w-full h-10 lg:h-12 rounded-lg outline-none px-4 text-[15px] font-[400] text-[#CFECED] placeholder:text-[#CFECED] placeholder:text-[14px] border border-[#13949A] lg:w-4/6"
+            className="waitlist-email-input w-full h-10 lg:h-12 rounded-lg outline-none px-4 text-[15px] font-[400] text-[#CFECED] placeholder:text-[#CFECED] placeholder:text-[14px] border border-[#13949A] lg:w-5/6"
             placeholder="Your Email Address"
             type="text"
           />
