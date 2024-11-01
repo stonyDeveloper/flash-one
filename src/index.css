@@ -245,12 +245,23 @@ body {
   border-image-slice: 1; /* Ensures the gradient spans the entire border */
 }
 
+.footer {
+  border-top: 0.1px solid transparent; /* Transparent border to apply border-image */
+  border-image: linear-gradient(
+    90deg,
+    rgba(6, 106, 111, 0.1) 0%,
+    rgba(206, 210, 212, 0.5) 50.5%,
+    rgba(6, 106, 111, 0.1) 91%
+  );
+  border-image-slice: 1; /* Ensures the gradient spans the entire border */
+}
+
 @keyframes sharpUpAndDown {
   0%, 100% {
     transform: translateY(0); /* Original position */
   }
   50% {
-    transform: translateY(-10px); /* Move up */
+    transform: translateY(-20px); /* Move up */
   }
 }
 
