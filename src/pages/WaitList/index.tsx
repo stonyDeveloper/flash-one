@@ -4,8 +4,11 @@ import JoinWaitlist from "./view/JoinWaitlist";
 import HealthIcons from "./view/HealthIcons";
 import SocialMediaIcons from "./view/SocialMediaIcons";
 import NavigationLinks from "./view/NavigationLinks";
+import SuccessModal from "../../components/SuccessModal";
+import { useState } from 'react'
 // dont forget to remove h-screen x
 const WaitList = () => {
+  const [isSuccessModal, setIsSuccessModal] = useState<boolean>(false)
   return (
     <div className="waitlist relative "> 
       <div className="grid place-items-center pt-10 lg:hidden">
@@ -19,7 +22,7 @@ const WaitList = () => {
 
       <WaitListHeader />
 
-      <JoinWaitlist />
+      <JoinWaitlist setIsSuccessModal={setIsSuccessModal} />
 
       <HealthIcons />
 
@@ -29,6 +32,12 @@ const WaitList = () => {
         <p>© 2024, FlashOne Health. All Rights Reserved</p>
         <NavigationLinks />
       </div>
+
+      <SuccessModal
+        isOpen={isSuccessModal}
+        onClose={() => setIsSuccessModal(false)}
+        message="Your action was successful!"
+      />
     </div>
   );
 };

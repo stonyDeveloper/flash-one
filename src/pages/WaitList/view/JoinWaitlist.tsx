@@ -6,7 +6,11 @@ import { motion } from "framer-motion";
 import Heart from "../../../assets/heart_desktop.svg";
 import Cross from "../../../assets/medical_cross_desktop.svg";
 
-const JoinWaitlist = () => {
+type JoinWaitlistProps = {
+  setIsSuccessModal: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const JoinWaitlist = ({setIsSuccessModal}: JoinWaitlistProps) => {
   const form = useRef<HTMLFormElement>(null);
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,8 +36,9 @@ const JoinWaitlist = () => {
       emailjs.sendForm(serviceID, templateID, form.current).then(
         () => {
           console.log("SUCCESS!");
-          alert("Successfully added to the waitlist!");
+          setIsSuccessModal(true)
           setIsSubmitting(false);
+          setEmail("")
         },
         (error) => {
           console.log("FAILED...", error.text);
