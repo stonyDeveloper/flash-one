@@ -28,7 +28,7 @@ const WaitList = () => {
 
       <div className="footer text-[12px] lg:text-[14px] font-[400] lg:font-[500] text-[#13949A] py-2 lg:py-4 lg:pt-5 text-center border-t  bg-[#0E292B]  z-50 absolute  bottom-0 w-full -mt-1 flex justify-center items-center gap-[100px]">
         <p>© {year}, WeCareHealth Health. All Rights Reserved</p>
-        <NavigationLinks />
+        <NavigationLinks /> 
       </div>
     </div>
   );
