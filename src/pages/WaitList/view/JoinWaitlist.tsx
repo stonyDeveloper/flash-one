@@ -64,7 +64,7 @@ const JoinWaitlist = ({setIsSuccessModal}: JoinWaitlistProps) => {
           variants={variants1}
           className="text-[48px] lg:text-[64px] font-cabinet font-extrabold bg-text-gradient bg-clip-text text-transparent text-center z-50 mt-10 lg:mt-4"
         >
-          FlashOne Health
+          WeCareAfrica Health
         </motion.div>
 
         <p className="text-center mx-auto mt-2 px-8 tracking-tighter lg:tracking-wider leading-[20px] bg-text-gradient bg-clip-text text-transparent font-[400] lg:hidden">
