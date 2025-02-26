@@ -1,89 +1,34 @@
 import Logo from "./view/Logo";
-import BoxOne from "../../../src/assets/box_1.svg";
-import AvatarOne from "../../../src/assets/avatar_1.jpg";
-import AvatarTwo from "../../../src/assets/avata_2.jpg";
-import AvatarThree from "../../../src/assets/avatar_3.png";
-import AvatarGroup from "../../../src/assets/_avatar group_.svg";
-import Heart from "../../../src/assets/heart.svg";
-import Cross from "../../../src/assets/medical_cross.svg";
-import Planet from "../../../src/assets/planet.png"
-
+import WaitListHeader from "./view/WaitListHeader";
+import JoinWaitlist from "./view/JoinWaitlist";
+import HealthIcons from "./view/HealthIcons";
+import SocialMediaIcons from "./view/SocialMediaIcons";
+import NavigationLinks from "./view/NavigationLinks";
+// dont forget to remove h-screen x
 const WaitList = () => {
+  const year = new Date().getFullYear()
   return (
-    <div className="waitlist h-screen relative w-screen overflow-hidden">
-      <div className="grid place-items-center pt-10">
-        <Logo />
+    <div className="waitlist relative "> 
+      <div className="grid place-items-center pt-10 lg:hidden">
+        <Logo fadeIn />
+      </div>
+      <div className="your-element hidden lg:grid  place-items-center py-6 border-t border-b ">
+        <Logo fadeIn />
       </div>
 
-      <img className="mt-6" src={BoxOne} alt="" />
 
-      <div className="flex items-center gap-6 mt-6">
-        <div className="w-full h-[0.5px] waitlist-line-left"></div>
-        <p className="text-[16px] bg-text-gradient bg-clip-text text-transparent">
-          Waitlist
-        </p>
-        <div className="w-full h-[0.5px] waitlist-line-right transform scale-x-[-1]"></div>
-      </div>
-      <div className="grid place-items-center">
-        <div className="line-with-circles w-[calc(100vw-1.9rem)]   z-50 mt-[54px]"></div>
-      </div>
 
-      <div className="text-[48px] font-cabinet font-extrabold bg-text-gradient bg-clip-text text-transparent text-center z-50">
-        FlashOne Health
-      </div>
+      <WaitListHeader />
 
-      <div className="grid place-items-center">
-        <div className="line-with-circles w-[calc(100vw-1.9rem)] z-50"></div>
-      </div>
+      <JoinWaitlist />
 
-      <p className="text-center mx-auto mt-6 px-8 tracking-tight leading-[18px] bg-text-gradient bg-clip-text text-transparent font-[400]">
-        Join our waitlist for exclusive access to top-tier health insurance
-        plans for your family in Nigeria.
-      </p>
+      <HealthIcons />
 
-      <div className="grid place-items-center mt-6">
-        <div className="line-with-circles w-[calc(100vw-1.9rem)]   z-50"></div>
-      </div>
+      <SocialMediaIcons />
 
-      <div className="px-8 mt-6">
-        <input
-          className="waitlist-email-input w-full h-10 rounded-lg outline-none px-4 text-[14px] font-[400] text-[#CFECED] placeholder:text-[#CFECED] border border-[#13949A]"
-          placeholder="Your Email Address"
-          type="text"
-        />
-
-        <button className="bg-[#13949A] w-full text-white text-[14px] font-[500] mt-4 h-10 rounded-lg hover:bg-[#14666B]">
-          Join Waitlist
-        </button>
-      </div>
-
-      <div className="mt-4 flex justify-center">
-        <img src={AvatarGroup} alt="" />
-      </div>
-
-      <p className="text-center mx-auto mt-4 px-8 tracking-tight leading-[18px] bg-text-gradient bg-clip-text text-transparent font-[400]">
-        Join others in the diaspora already onboard!
-      </p>
-
-      <div className="grid place-items-center mt-2">
-        <div className="line-with-circles w-[calc(100vw-1.9rem)]   z-50"></div>
-      </div>
-
-      <div className="pl-4">
-        
-        <div className="px-1 border-r w-fit">
-          <img src={Heart} alt="heart" />
-          <img src={Cross} alt="cross" />
-        </div>
-      </div>
-
-      <img  className="w-full z-50" src={Planet} alt="" />
-
-      <div className="absolute bottom-0 left-4  grid place-items-center h-screen z-10">
-        <div className="h-[calc(100vh-3.125rem)] w-[0.5px] bg-custom-gradient"></div>
-      </div>
-      <div className="absolute bottom-0 right-4  grid place-items-center h-screen z-10">
-        <div className="h-[calc(100vh-3.125rem)] w-[0.5px] bg-custom-gradient"></div> 
+      <div className="footer text-[12px] lg:text-[14px] font-[400] lg:font-[500] text-[#13949A] py-2 lg:py-4 lg:pt-5 text-center border-t  bg-[#0E292B]  z-50 absolute  bottom-0 w-full -mt-1 flex justify-center items-center gap-[100px]">
+        <p>© {year}, WeCareHealth Health. All Rights Reserved</p>
+        <NavigationLinks />
       </div>
     </div>
   );
