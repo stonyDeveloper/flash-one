@@ -5,21 +5,18 @@ import HealthIcons from "./view/HealthIcons";
 import SocialMediaIcons from "./view/SocialMediaIcons";
 import NavigationLinks from "./view/NavigationLinks";
 import SuccessModal from "../../components/SuccessModal";
-import { useState } from 'react'
-// dont forget to remove h-screen x
+import { useState } from "react";
 const WaitList = () => {
-  const [isSuccessModal, setIsSuccessModal] = useState<boolean>(false)
-  const year = new Date().getFullYear()
+  const [isSuccessModal, setIsSuccessModal] = useState<boolean>(false);
+  const year = new Date().getFullYear();
   return (
-    <div className="waitlist relative "> 
+    <div className="waitlist relative ">
       <div className="grid place-items-center pt-10 lg:hidden">
         <Logo fadeIn />
       </div>
       <div className="your-element hidden lg:grid  place-items-center py-6 border-t border-b ">
         <Logo fadeIn />
       </div>
-
-
 
       <WaitListHeader />
 
