@@ -22,7 +22,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose}) => {
         <img src={SuccessIcon} alt="" />
         <p className='text-[#CFECED] text-[20px] font-[700] mt-6'>We've added you to our <br />
         waiting list!</p>
-        <p className='text-[16px] font-[400] text-[#CFECED] mt-4'>We'll let you know when FlashOne Health is ready.</p>
+        <p className='text-[16px] font-[400] text-[#CFECED] mt-4'>We'll let you know when WeCareAfrica Health is ready.</p>
         <button
           className="bg-[#13949A] w-full h-[40px] hover:bg-[#0F7B7D] text-white px-4 py-2 rounded-lg mt-10"
           onClick={onClose}

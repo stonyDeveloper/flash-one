@@ -34,7 +34,6 @@ const WaitList = () => {
       <SuccessModal
         isOpen={isSuccessModal}
         onClose={() => setIsSuccessModal(false)}
-        message="Your action was successful!"
       />
     </div>
   );
